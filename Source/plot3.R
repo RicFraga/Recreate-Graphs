@@ -13,5 +13,7 @@ third_plot <- function(data) {
      plot(times, sm1, ylab = 'Energy sub metering')
      lines(times, sm2, col = 'red')
      lines(times, sm3, col = 'blue')
+     legend('topright',legend = c('Sub metering 1', 'Sub metering 2', 'Sub metering 3'),
+            pch = c('_', '_', '_'), col = c('black', 'red', 'blue'))
      dev.off()
 }
